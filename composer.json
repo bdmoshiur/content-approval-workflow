@@ -1,0 +1,44 @@
+{
+    "name": "interlink/content-approval-workflow",
+    "description": "A Laravel package for managing content approval workflows.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moshiur Rahman",
+            "email": "moshiurcse888@example.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Interlink\\ContentApprovalWorkflow\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Interlink\\ContentApprovalWorkflow\\Providers\\ContentApprovalWorkflowServiceProvider"
+            ],
+            "aliases": {
+                "ContentApprovalWorkflow": "Interlink\\ContentApprovalWorkflow\\Facades\\ContentApprovalWorkflow"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.0",
+        "orchestra/testbench": "^7.0|^8.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Interlink\\ContentApprovalWorkflow\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
