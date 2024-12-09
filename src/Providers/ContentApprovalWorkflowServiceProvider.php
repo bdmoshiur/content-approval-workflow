@@ -1,6 +1,6 @@
 <?php
 
-namespace Interlink\ContentApprovalWorkflow\Providers; // Add the correct namespace here
+namespace Interlink\ContentApprovalWorkflow\Providers; // Correct namespace
 
 use Illuminate\Support\ServiceProvider;
 
@@ -25,9 +25,9 @@ class ContentApprovalWorkflowServiceProvider extends ServiceProvider
             __DIR__ . '/../Config/config.php' => config_path('content-approval-workflow.php'),
         ], 'config');
 
-        // Publish views to the Laravel views path
-        $this->publishes([
-            __DIR__ . '/../Views' => resource_path('views/vendor/content-approval-workflow'),
-        ], 'views');
+        // Comment out or remove the views publishing as views are not available yet
+        // $this->publishes([
+        //     __DIR__ . '/../Views' => resource_path('views/vendor/content-approval-workflow'),
+        // ], 'views');
     }
 }
