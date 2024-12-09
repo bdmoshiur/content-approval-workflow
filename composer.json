@@ -9,8 +9,8 @@
             "email": "moshiurcse888@example.com"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "minimum-stability": "dev",  // This allows for dev versions, but be aware that unstable versions might be used
+    "prefer-stable": true,  // Prefers stable versions when available
     "require": {
         "php": ">=8.0",
         "illuminate/support": "^9.0|^10.0"
@@ -23,10 +23,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Interlink\\ContentApprovalWorkflow\\Providers\\ContentApprovalWorkflowServiceProvider"
+                "Interlink\\ContentApprovalWorkflow\\Providers\\ContentApprovalWorkflowServiceProvider"  // Service provider path
             ],
             "aliases": {
-                "ContentApprovalWorkflow": "Interlink\\ContentApprovalWorkflow\\Facades\\ContentApprovalWorkflow"
+                "ContentApprovalWorkflow": "Interlink\\ContentApprovalWorkflow\\Facades\\ContentApprovalWorkflow"  // Facade alias
             }
         }
     },
@@ -36,7 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Interlink\\ContentApprovalWorkflow\\Tests\\": "tests/"
+            "Interlink\\ContentApprovalWorkflow\\Tests\\": "tests/"  // Test classes location
         }
     },
     "scripts": {
